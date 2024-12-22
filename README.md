@@ -48,9 +48,9 @@ The dataset used for this project is sourced from [Our World in Data](https://ou
      ```
 ## SQL Querty Skills Demonstrated
 #### 1. Basic SQL Operations
-Creating Tables: CREATE TABLE CovidDeaths, CREATE TABLE CovidVaccinations.
-Dropping Tables: DROP TABLE CovidDeaths, DROP TABLE CovidVaccinations.
-Altering Tables: ALTER TABLE CovidDeaths ALTER COLUMN date TYPE DATE.
+- Creating Tables: CREATE TABLE CovidDeaths, CREATE TABLE CovidVaccinations.
+- Dropping Tables: DROP TABLE CovidDeaths, DROP TABLE CovidVaccinations.
+- Altering Tables: ALTER TABLE CovidDeaths ALTER COLUMN date TYPE DATE.
 
 #### 2. Data Retrieval
 Selecting Data: SELECT queries to retrieve data from tables.
