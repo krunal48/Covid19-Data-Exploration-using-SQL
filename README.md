@@ -51,19 +51,24 @@ The dataset used for this project is sourced from [Our World in Data](https://ou
 Creating Tables: CREATE TABLE CovidDeaths, CREATE TABLE CovidVaccinations.
 Dropping Tables: DROP TABLE CovidDeaths, DROP TABLE CovidVaccinations.
 Altering Tables: ALTER TABLE CovidDeaths ALTER COLUMN date TYPE DATE.
-2. Data Retrieval
+
+#### 2. Data Retrieval
 Selecting Data: SELECT queries to retrieve data from tables.
 Filtering Data: Using WHERE clauses (e.g., WHERE continent IS NOT NULL).
 Sorting Data: Using ORDER BY (e.g., ORDER BY 1, 2).
-3. Data Manipulation
+
+#### 3. Data Manipulation
 Inserting Data: INSERT INTO PercentPopulationVaccinated.
 Updating Data: Implicit through ALTER TABLE or calculated fields.
-4. Aggregations and Grouping
+
+#### 4. Aggregations and Grouping
 Aggregating Data: SUM, MAX, AVG, etc., (e.g., SUM(new_cases), MAX(total_deaths)).
 Grouping Data: Using GROUP BY (e.g., GROUP BY Location).
-5. Window Functions
+
+#### 5. Window Functions
 Calculations Over Partitions: SUM(...) OVER (PARTITION BY ...).
-6. Joins
+
+#### 6. Joins
 Inner Join: Joining CovidDeaths and CovidVaccinations tables (e.g., ON dea.location = vac.location).
 7. Common Table Expressions (CTEs)
 Using WITH clause for intermediate calculations (e.g., WITH PopvsVac).
