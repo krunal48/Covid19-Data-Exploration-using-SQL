@@ -10,7 +10,7 @@ The dataset used for this project is sourced from [Our World in Data](https://ou
 
 ## Installation
 ### Prerequisites
-- Microsoft SQL Server (for SQL database software)
+- Postgre SQL Server (for SQL database software)
 - Tableau Desktop (for data visualization)
 
 ### Setup Instructions
