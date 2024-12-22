@@ -46,7 +46,7 @@ The dataset used for this project is sourced from [Our World in Data](https://ou
      GROUP BY location, population
      ORDER BY vaccination_rate DESC;
      ```
-## SQL Querty Skills Demonstrated
+## SQL Query Skills Demonstrated
 #### 1. Basic SQL Operations
 - Creating Tables: CREATE TABLE CovidDeaths, CREATE TABLE CovidVaccinations.
 - Dropping Tables: DROP TABLE CovidDeaths, DROP TABLE CovidVaccinations.
@@ -101,7 +101,7 @@ The dataset used for this project is sourced from [Our World in Data](https://ou
 #### 16. Statistical Analysis
 - Calculating ratios and percentages (e.g., (total_deaths/total_cases)*100, (RollingPeopleVaccinated/Population)*100).
 
-## Tableau Visualization
+## Tableau Visualization -bold-
 1. Use Tableau to connect to your SQL database.
 2. Create visualizations such as:
    - Line charts to show trends in daily cases and deaths.
