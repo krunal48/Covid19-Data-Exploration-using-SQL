@@ -15,7 +15,7 @@ The dataset used for this project is sourced from [Our World in Data](https://ou
 
 ### Setup Instructions
 1. Download the dataset from the following link: [Our World in Data Covid Deaths Dataset](https://ourworldindata.org/covid-deaths).
-2. Import the dataset into your SQL database using the import tools provided by your database software.
+2. Import the dataset into your PostgreSQL server after creating tables with appropriate datatype for each column and  using the import tools provided by your database software.
 3. Open Tableau Desktop and connect it to your SQL database.
 4. Follow the instructions in the `Usage` section to execute SQL queries and visualize data.
 
@@ -46,6 +46,46 @@ The dataset used for this project is sourced from [Our World in Data](https://ou
      GROUP BY location, population
      ORDER BY vaccination_rate DESC;
      ```
+## SQL Querty Skills Demonstrated
+#### 1. Basic SQL Operations
+Creating Tables: CREATE TABLE CovidDeaths, CREATE TABLE CovidVaccinations.
+Dropping Tables: DROP TABLE CovidDeaths, DROP TABLE CovidVaccinations.
+Altering Tables: ALTER TABLE CovidDeaths ALTER COLUMN date TYPE DATE.
+2. Data Retrieval
+Selecting Data: SELECT queries to retrieve data from tables.
+Filtering Data: Using WHERE clauses (e.g., WHERE continent IS NOT NULL).
+Sorting Data: Using ORDER BY (e.g., ORDER BY 1, 2).
+3. Data Manipulation
+Inserting Data: INSERT INTO PercentPopulationVaccinated.
+Updating Data: Implicit through ALTER TABLE or calculated fields.
+4. Aggregations and Grouping
+Aggregating Data: SUM, MAX, AVG, etc., (e.g., SUM(new_cases), MAX(total_deaths)).
+Grouping Data: Using GROUP BY (e.g., GROUP BY Location).
+5. Window Functions
+Calculations Over Partitions: SUM(...) OVER (PARTITION BY ...).
+6. Joins
+Inner Join: Joining CovidDeaths and CovidVaccinations tables (e.g., ON dea.location = vac.location).
+7. Common Table Expressions (CTEs)
+Using WITH clause for intermediate calculations (e.g., WITH PopvsVac).
+8. Views
+Creating Views: CREATE VIEW PercentPopulationVaccinated2.
+9. Temporary Tables
+Creating Temporary Tables: CREATE TABLE PercentPopulationVaccinated.
+Dropping Temporary Tables: DROP TABLE IF EXISTS PercentPopulationVaccinated.
+10. Derived and Calculated Fields
+Creating calculated fields in SELECT queries (e.g., (total_deaths/total_cases)*100 as DeathPercentage).
+11. Data Type Casting
+Explicit Casting: Using CAST(... AS type) (e.g., CAST(Total_deaths AS int)).
+12. Limiting Results
+Using LIMIT to restrict the number of rows returned (e.g., LIMIT 10).
+13. Condition-Based Queries
+Using conditional logic within queries (e.g., WHERE location LIKE '%India%').
+14. Date Handling
+Changing data type to DATE and formatting using TO_DATE.
+15. Global and Regional Analysis
+Aggregating data at a global or continental level (e.g., GROUP BY continent).
+16. Statistical Analysis
+Calculating ratios and percentages (e.g., (total_deaths/total_cases)*100, (RollingPeopleVaccinated/Population)*100).
 
 ### Tableau Visualization
 1. Use Tableau to connect to your SQL database.
