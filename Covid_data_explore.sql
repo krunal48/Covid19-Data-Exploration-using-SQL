@@ -126,6 +126,38 @@ from (
 )
 order by 1;
 
+--Find the top 10 countries with the highest Covid-19 death rates:
+
+SELECT location, MAX(total_deaths) AS max_deaths
+FROM CovidDeaths
+WHERE total_deaths is not null
+GROUP BY location
+ORDER BY max_deaths DESC
+LIMIT 10;
+
+
+--Analyze daily new cases trend:
+SELECT date, SUM(new_cases) AS daily_cases
+FROM CovidDeaths
+WHERE new_cases is not null
+GROUP BY date
+ORDER BY date;
+
+--Calculate vaccination rate by country:
+
+Select * from CovidVaccinations;
+
+select * from CovidDeaths;
+
+SELECT dea.location, MAX(vac.people_vaccinated)/dea.Population AS vaccination_rate
+FROM CovidVaccinations vac
+Join CovidDeaths dea
+on dea.location = vac.location
+WHERE dea.population IS NOT NULL and vac.people_vaccinated is not null
+GROUP BY dea.location, dea.population
+ORDER BY vaccination_rate DESC;
+
+
 -- Countries with Highest Infection Rate compared to Population
 
 Select Location, Population, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected
