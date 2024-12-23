@@ -1,4 +1,4 @@
-# Covid19-Data-Exploration
+# Covid19-Data-Exploration-using-SQL
 
 ## Project Title
 Covid-Data-Exploration: Analyzing and Visualizing Global Covid Data
